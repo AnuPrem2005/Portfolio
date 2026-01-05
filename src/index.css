@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@media screen and (min-width: 768px) and (max-width: 864px) {
+  .boxx {
+    width: 240px;  
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1277px) {
+  .boxxx {
+    width: 100% !important;
+    max-width: 320px;
+  }
+
+  .input-half {
+    width: 100% !important;
+  }
+
+  .input-full {
+    width: 100% !important;
+  }
+}
+
