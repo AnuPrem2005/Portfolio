@@ -6,7 +6,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
- import {FaLinkedin,FaSquareXTwitter } from "react-icons/fa6";
+import {FaLinkedin,FaSquareXTwitter } from "react-icons/fa6";
 import { FaGithub,FaInstagramSquare } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
