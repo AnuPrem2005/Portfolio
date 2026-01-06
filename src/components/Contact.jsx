@@ -25,7 +25,7 @@ const Contact = () => {
 >
   {/* CONTACT INFO */}
   <div
-    data-aos="fade-right"
+    data-aos="fade-up"
     className="bg-white p-5 rounded-xl shadow-xl
     w-full sm:w-[90%] md:w-[420px] lg:w-[480px]
     min-h-[560px]
@@ -113,7 +113,7 @@ const Contact = () => {
 
   {/* CONTACT FORM */}
   <div
-    data-aos="fade-left"
+    data-aos="fade-up"
     className="bg-white p-5 rounded-xl shadow-xl
     w-full sm:w-[90%] md:w-[420px] lg:w-[480px]
     min-h-[560px]
