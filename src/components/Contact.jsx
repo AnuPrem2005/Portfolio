@@ -20,7 +20,7 @@ const Contact = () => {
        <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-items-center mt-15 lg:mx-20 gap-4 md:gap-4 sm:mx-20 gap-4'>
 
       {/* CONTACT INFO */}
-      <div data-aos="fade-right" className='bg-white rounded-xl p-5 shadow-xl w-120 h-140 hover:shadow-xl/20 hover:-translate-y-4 delay-150 duration-300 overflow-hidden boxxx'>
+      <div data-aos="fade-right" className='bg-white p-5 rounded-xl shadow-xl w-120 h-140 hover:shadow-xl/20 hover:-translate-y-4 delay-150 duration-300 overflow-hidden boxxx'>
         <h2 className='text-xl font-bold text-gray-800 flex place-content-start mt-5'>
           Contact Information
         </h2>

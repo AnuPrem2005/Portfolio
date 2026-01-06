@@ -33,7 +33,7 @@ function App() {
         <div className="flex h-16 items-center justify-between">
 
           {/* LOGO */}
-          <Link to="home" smooth={true} duration={500} href="#home" className="font-bold text-2xl">
+          <Link to="home" smooth={true} duration={500} href="#home" className="font-bold text-2xl hover:cursor-pointer">
             Anu Prem
           </Link>
 
@@ -45,7 +45,7 @@ function App() {
                 to={`${item.toLowerCase()}`}
                 smooth={true}
                 duration={500}
-                className="px-3 py-2 text-sm font-medium rounded hover:bg-cyan-500 hover:text-white"
+                className="px-3 py-2 text-sm font-medium rounded hover:bg-cyan-500 hover:text-white hover:cursor-pointer"
               >
                 {item}
               </Link>
@@ -64,13 +64,13 @@ function App() {
 
       {/* MOBILE MENU */}
       {open && (
-        <div className="sm:hidden bg-cyan-100 px-4 pb-4 space-y-2">
+        <div className="sm:hidden bg-cyan-100 px-4 pb-4 space-y-2 hover:cursor-pointer ">
           {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
               onClick={() => setOpen(false)}
-              className="block px-3 py-2 rounded hover:bg-cyan-500 hover:text-white"
+              className="block px-3 py-2 rounded hover:bg-cyan-500 hover:text-white "
             >
               {item}
             </a>
@@ -85,75 +85,92 @@ function App() {
         <Projects />
         <Contact />
       </BrowserRouter>
-      <footer className=' w-full bg-cyan-950 pt-10 pb-10 ps-15 pe-15'>
+      <footer className="w-full bg-cyan-950 pt-10 pb-10 px-5 md:px-10 lg:px-15">
+  <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
 
-        <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4'>
+    {/* LEFT SECTION */}
+    <div className="flex flex-col sm:items-center md:items-start lg:items-start text-center sm:text-center md:text-left lg:text-left">
+      <Link
+        to="home"
+        smooth={true}
+        duration={500}
+        className="font-bold text-white text-2xl"
+      >
+        Anu Prem
+      </Link>
 
-        <div className='lg:justify-items-start md:justify-items-start sm:justify-items-center'>
-          <a href="#home" className='lg:text-start md:text-center sm:text-center'>
-          <Link to="home" smooth={true} duration={500} className='font-bold text-white text-2xl'>Anu Prem</Link>
-          </a>
-          <p className='text-white mt-5 opacity-75'>React.js Developer passionate about creating <br /> beautiful, responsive web applications with <br /> modern technologies.</p>
-          <div className='mt-5 flex gap-5'>
-            <a href="https://github.com/AnuPrem2005">
-                    <div className='rounded-lg grid place-content-center bg-black w-10 h-10 hover:cursor-pointer text-white hover:-translate-y-1 delay-150 duration-300 hover:scale-110 hover:bg-blue-500'><FaGithub className='text-white text-xl' /></div>
-                    </a>
-                    <a href="www.linkedin.com/in/anu-prem">
-                    <div className='rounded-lg grid place-content-center bg-black w-10 h-10 hover:cursor-pointer text-white hover:-translate-y-1 delay-150 duration-300 hover:scale-110 hover:bg-blue-500'><FaLinkedin className='text-white text-xl' /></div>
-                    </a>
-                    <a href="https://x.com/AnuPremJayaKum1">
-                    <div className='rounded-lg grid place-content-center bg-black w-10 h-10 hover:cursor-pointer text-white hover:-translate-y-1 delay-150 duration-300 hover:scale-110 hover:bg-blue-500'><FaSquareXTwitter className='text-white text-xl' /></div>
-                    </a>
-                    <a href="https://www.instagram.com/sucesful_loser?igsh=MW5ubnd2aTk0aHVoMg%3D%3D&utm_source=qr">
-                    <div className='rounded-lg grid place-content-center bg-black w-10 h-10 hover:cursor-pointer text-white hover:-translate-y-1 delay-150 duration-300 hover:scale-110 hover:bg-blue-500'><FaInstagramSquare className='text-white text-xl' /></div>
-                    </a>
-                  </div>
-        </div>
+      <p className="text-white mt-5 opacity-75">
+        React.js Developer passionate about creating <br />
+        beautiful, responsive web applications with <br />
+        modern technologies.
+      </p>
 
-        <div className='justify-items-center'>
-          <h1 className='font-bold text-white text-2xl'>Quick Links</h1>
-          <div className='grid justify-items-center mt-5'>
-            <Link to="home" smooth={true} duration={500} href="#home" className="px-3 py-2 text-sm font-medium text-white opacity-75 hover:opacity-100">
-          Home
-        </Link>
-        <Link to="about" smooth={true} duration={500} href="#about" className="px-3 py-2 text-sm font-medium text-white opacity-75 hover:opacity-100">
-          About
-        </Link>
-        <Link to="skills" smooth={true} duration={500} href="#skills" className="px-3 py-2 text-sm font-medium text-white opacity-75 hover:opacity-100">
-          Skills
-        </Link>
-        <Link to="projects" smooth={true} duration={500} href="#projects" className="px-3 py-2 text-sm font-medium text-white opacity-75 hover:opacity-100">
-          Projects
-        </Link>
-        <Link to="contact" smooth={true} duration={500} href="#contact" className="px-3 py-2 text-sm font-medium text-white opacity-75 hover:opacity-100">
-          Contact
-        </Link>
+      <div className="mt-5 flex gap-5 justify-center md:justify-start">
+        <a href="https://github.com/AnuPrem2005">
+          <div className="rounded-lg grid place-content-center bg-black w-10 h-10 hover:-translate-y-1 duration-300 hover:scale-110 hover:bg-blue-500">
+            <FaGithub className="text-white text-xl" />
           </div>
-        </div>
+        </a>
 
-        <div className='lg:justify-items-end md:justify-items-end sm:justify-items-center'>
-          <h1 className='font-bold text-white text-2xl'>Get In Touch</h1>
-          <a href="mailto:anupremj@gmail.com" className='lg:text-end md:text-center sm:text-center'>
-          <p className='text-white mt-5 opacity-75 hover:opacity-100 hover:cursor-pointer'>anupremj@gmail.com</p>
-          </a>
-          <a href="tel:+919344717272" className='lg:text-end md:text-center sm:text-center'>
-          <p className='text-white mt-3 opacity-75 hover:opacity-100 hover:cursor-pointer'>+91 93447 17272</p>
-          </a>
-          <a href="https://www.google.com/maps/place/Nagercoil,+Tamil+Nadu/@8.171388,77.3738321,13z/data=!3m1!4b1!4m6!3m5!1s0x3b04f0dfc0ddc7b7:0x809a9e32a95d3ed1!8m2!3d8.1832857!4d77.4118996!16zL20vMDJoemR5?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" className='lg:text-end md:text-center sm:text-center'>
-          <p className='text-white mt-3 opacity-75 hover:opacity-100 hover:cursor-pointer'>Nagercoil,India</p>
-          </a>
-        </div>
+        <a href="https://www.linkedin.com/in/anu-prem">
+          <div className="rounded-lg grid place-content-center bg-black w-10 h-10 hover:-translate-y-1 duration-300 hover:scale-110 hover:bg-blue-500">
+            <FaLinkedin className="text-white text-xl" />
+          </div>
+        </a>
 
-        </div>
+        <a href="https://x.com/AnuPremJayaKum1">
+          <div className="rounded-lg grid place-content-center bg-black w-10 h-10 hover:-translate-y-1 duration-300 hover:scale-110 hover:bg-blue-500">
+            <FaSquareXTwitter className="text-white text-xl" />
+          </div>
+        </a>
 
-        <div className='h-1 w-full m-5 bg-white opacity-5'></div>
+        <a href="https://www.instagram.com/sucesful_loser">
+          <div className="rounded-lg grid place-content-center bg-black w-10 h-10 hover:-translate-y-1 duration-300 hover:scale-110 hover:bg-blue-500">
+            <FaInstagramSquare className="text-white text-xl" />
+          </div>
+        </a>
+      </div>
+    </div>
 
-        <div className='flex justify-between items-center'>
-        <p className='text-white opacity-75'>© 2025 Anu Prem. All rights reserved.</p>
-        <p className='text-white opacity-75'>Built with React.js & Tailwind CSS</p>
-        </div>
+    {/* CENTER SECTION */}
+    <div className="flex flex-col items-center text-center">
+      <h1 className="font-bold text-white text-2xl">Quick Links</h1>
 
-      </footer>
+      <div className="grid justify-items-center mt-5">
+        <Link to="home" smooth duration={500} className="py-2 text-sm text-white opacity-75 hover:opacity-100 hover:cursor-pointer">Home</Link>
+        <Link to="about" smooth duration={500} className="py-2 text-sm text-white opacity-75 hover:opacity-100 hover:cursor-pointer">About</Link>
+        <Link to="skills" smooth duration={500} className="py-2 text-sm text-white opacity-75 hover:opacity-100 hover:cursor-pointer">Skills</Link>
+        <Link to="projects" smooth duration={500} className="py-2 text-sm text-white opacity-75 hover:opacity-100 hover:cursor-pointer">Projects</Link>
+        <Link to="contact" smooth duration={500} className="py-2 text-sm text-white opacity-75 hover:opacity-100 hover:cursor-pointer">Contact</Link>
+      </div>
+    </div>
+
+    {/* RIGHT SECTION */}
+    <div className="flex flex-col sm:items-center md:items-end lg:items-end text-center sm:text-center md:text-right lg:text-right">
+      <h1 className="font-bold text-white text-2xl">Get In Touch</h1>
+
+      <a href="mailto:anupremj@gmail.com">
+        <p className="text-white mt-5 opacity-75 hover:opacity-100">anupremj@gmail.com</p>
+      </a>
+
+      <a href="tel:+919344717272">
+        <p className="text-white mt-3 opacity-75 hover:opacity-100">+91 93447 17272</p>
+      </a>
+
+      <a href="https://www.google.com/maps/place/Nagercoil,+Tamil+Nadu">
+        <p className="text-white mt-3 opacity-75 hover:opacity-100">Nagercoil, India</p>
+      </a>
+    </div>
+  </div>
+
+  <div className="h-px w-full my-8 bg-white opacity-10"></div>
+
+  <div className="flex flex-col sm:flex-col md:flex-row justify-between items-center gap-3 text-center">
+    <p className="text-white opacity-75">© 2025 Anu Prem. All rights reserved.</p>
+    <p className="text-white opacity-75">Built with React.js & Tailwind CSS</p>
+  </div>
+</footer>
+
     </div>
 
   )

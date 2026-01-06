@@ -79,8 +79,12 @@ const Projects = () => {
           </div>
 
           <div className='gap-5 flex mx-3'>
-                    <button className='gap-1 bg-cyan-500 flex place-items-center flex justify-center rounded-md w-40 h-9 mt-5 hover:cursor-pointer text-white hover:bg-cyan-600 hover:-translate-y-[-3] delay-150 duration-300 hover:scale-110'><FaShareFromSquare />Live Demo</button>
-                    <button className='gap-1 flex place-items-center flex justify-center rounded-md w-40 h-9 mt-5 border-2 border-solid border-cyan-500 me-3 text-cyan-500 hover:bg-cyan-500 cursor-pointer hover:text-white'><FiGithub />Code</button>
+            <a href="https://portfolio-z4dn-oz3ohds90-anu-prems-projects.vercel.app/">
+                    <button className='gap-1 bg-cyan-500 flex place-items-center flex justify-center rounded-md w-35 h-9 mt-5 hover:cursor-pointer text-white hover:bg-cyan-600 hover:-translate-y-[-3] delay-150 duration-300 hover:scale-110'><FaShareFromSquare />Live Demo</button>
+                    </a>
+                    <a href="https://github.com/AnuPrem2005/Portfolio">
+                    <button className='gap-1 flex place-items-center flex justify-center rounded-md w-35 h-9 mt-5 border-2 border-solid border-cyan-500 me-3 text-cyan-500 hover:bg-cyan-500 cursor-pointer hover:text-white'><FiGithub />Code</button>
+                    </a>
                     </div>
 
         </div>
