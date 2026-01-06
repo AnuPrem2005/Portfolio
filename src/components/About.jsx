@@ -6,12 +6,12 @@ const About = () => {
     <div id='about' className='pt-20'>
       <h1 className='font-bold text-xl text-cyan-500 w-full flex place-content-center mt-5'>About me</h1>
       <div className='lg:grid grid-cols-2 sm:grid grid-cols-1 md:grid grid-cols-2'>
-        <div data-aos="fade-right" className='relative place-items-center mt-12 me-7'>
+        <div data-aos="fade-up" className='relative place-items-center mt-12 me-7'>
 
           <img src={Abbout} alt="item" className='w-100 h-70 rounded-lg' />
 
         </div>
-        <div data-aos="fade-left" className='mt-10 lg:place-items-start md:place-items-start sm:text-center'>
+        <div data-aos="fade-up" className='mt-10 lg:place-items-start md:place-items-start sm:text-center'>
           <h2 className='text-3xl font-bold text-gray-800 sm: me-full text-center'>Passionate Developer & <br /> Lifelong Learner</h2>
           <p className=' text-lg lg:me-40 mt-3 md:me-40 mt-3 sm:me-full mt-3 text-center'>I'm <b>Anu Prem</b>, currently pursuing B.E. CSE at  <b className='text-cyan-500'>Stella Mary's College</b>. In addition to my studies, I'm doing a React.js course where I learned React.js, HTML, CSS, Bootstrap, Tailwind CSS, MUI, and Redux.</p>
           <p className='lg:me-40 mt-3 md:me-40 mt-3 sm:me-full mt-3 text-center'>I'm a self-motivated person who loves <b>editing, driving, biking with friends</b>, and <b>exploring new places</b>. When I'm not coding, you'll find me discovering new technologies or enjoying adventures with my friends</p>
