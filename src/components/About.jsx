@@ -13,7 +13,7 @@ const About = () => {
     {/* IMAGE SECTION */}
     <div
       data-aos="fade-up"
-      className="relative flex justify-center mt-12 
+      className="relative flex justify-center items-center min-h-full
       sm:mx-auto md:me-7 lg:me-7"
     >
       <img
@@ -29,18 +29,18 @@ const About = () => {
       className="mt-10 
       text-center 
       sm:px-5 
-      md:px-0 
-      lg:px-0"
+      md:px-0 md:pr-8
+      lg:px-0 lg:pr-12"
     >
       <h2 className="text-3xl font-bold text-gray-800 text-center">
         Passionate Developer & <br /> Lifelong Learner
       </h2>
 
       <p className="text-lg mt-3 text-center sm:px-2 md:px-0">
-        I'm <b>Anu Prem</b>, currently pursuing B.E. CSE at{" "}
-        <b className="text-cyan-500">Stella Mary's College</b>. In addition to my
-        studies, I'm doing a React.js course where I learned React.js, HTML, CSS,
-        Bootstrap, Tailwind CSS, MUI, and Redux.
+        Passionate about creating beautiful, responsive web applications with
+        modern technologies. I completed my B.E. in Computer Science Engineering
+        at <b className="text-cyan-500">Stella Mary's College of Engineering</b> in 2026 and
+        specialize in React.js development.
       </p>
 
       <p className="mt-3 text-center sm:px-2 md:px-0">

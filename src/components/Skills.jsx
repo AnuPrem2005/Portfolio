@@ -2,7 +2,7 @@ import React from 'react'
 import { FaReact, FaHtml5, FaCss3, FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiMui, SiRedux } from "react-icons/si";
+import { SiMui, SiRedux, SiMongodb, SiExpress, SiNodedotjs, SiPostman } from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -119,6 +119,62 @@ const Skills = () => {
           </div>
 
           <p className='text-sm opacity-75 flex justify-center'>70%</p>
+
+        </div>
+
+        <div data-aos="zoom-in" className='gap-2 grid place-content-center bg-white rounded-xl shadow-xl w-70 h-50 hover:cursor-pointer hover:shadow-xl/20 boxx'>
+          <div className='flex justify-center'>
+            <div className='rounded-xl grid place-content-center bg-green-50 w-15 h-15'><SiMongodb className='text-green-600 text-4xl' /></div>
+          </div>
+          <h1 className='font-bold flex place-content-center'>MongoDB</h1>
+
+          <div class="w-50 bg-gray-200 rounded-full h-2">
+            <div class="bg-sky-500 h-2 rounded-full w-[60%]"></div>
+          </div>
+
+          <p className='text-sm opacity-75 flex justify-center'>60%</p>
+
+        </div>
+
+        <div data-aos="zoom-in" className='gap-2 grid place-content-center bg-white rounded-xl shadow-xl w-70 h-50 hover:cursor-pointer hover:shadow-xl/20 boxx'>
+          <div className='flex justify-center'>
+            <div className='rounded-xl grid place-content-center bg-gray-100 w-15 h-15'><SiExpress className='text-gray-700 text-4xl' /></div>
+          </div>
+          <h1 className='font-bold flex place-content-center'>Express</h1>
+
+          <div class="w-50 bg-gray-200 rounded-full h-2">
+            <div class="bg-sky-500 h-2 rounded-full w-[50%]"></div>
+          </div>
+
+          <p className='text-sm opacity-75 flex justify-center'>50%</p>
+
+        </div>
+
+        <div data-aos="zoom-in" className='gap-2 grid place-content-center bg-white rounded-xl shadow-xl w-70 h-50 hover:cursor-pointer hover:shadow-xl/20 boxx'>
+          <div className='flex justify-center'>
+            <div className='rounded-xl grid place-content-center bg-green-50 w-15 h-15'><SiNodedotjs className='text-green-600 text-4xl' /></div>
+          </div>
+          <h1 className='font-bold flex place-content-center'>Node.js</h1>
+
+          <div class="w-50 bg-gray-200 rounded-full h-2">
+            <div class="bg-sky-500 h-2 rounded-full w-[50%]"></div>
+          </div>
+
+          <p className='text-sm opacity-75 flex justify-center'>50%</p>
+
+        </div>
+
+        <div data-aos="zoom-in" className='gap-2 grid place-content-center bg-white rounded-xl shadow-xl w-70 h-50 hover:cursor-pointer hover:shadow-xl/20 boxx'>
+          <div className='flex justify-center'>
+            <div className='rounded-xl grid place-content-center bg-orange-50 w-15 h-15'><SiPostman className='text-orange-500 text-4xl' /></div>
+          </div>
+          <h1 className='font-bold flex place-content-center'>Postman</h1>
+
+          <div class="w-50 bg-gray-200 rounded-full h-2">
+            <div class="bg-sky-500 h-2 rounded-full w-[60%]"></div>
+          </div>
+
+          <p className='text-sm opacity-75 flex justify-center'>60%</p>
 
         </div>
       </div>

@@ -66,14 +66,16 @@ function App() {
       {open && (
         <div className="sm:hidden bg-cyan-100 px-4 pb-4 space-y-2 hover:cursor-pointer ">
           {["Home", "About", "Skills", "Projects", "Contact"].map((item) => (
-            <a
+            <Link
               key={item}
-              href={`#${item.toLowerCase()}`}
+              to={`${item.toLowerCase()}`}
+              smooth={true}
+              duration={500}
               onClick={() => setOpen(false)}
               className="block px-3 py-2 rounded hover:bg-cyan-500 hover:text-white "
             >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
       )}
