@@ -134,7 +134,7 @@ const Projects = () => {
                 <span className='rounded-full bg-cyan-50 px-3 py-1'>CSS</span>
               </div>
               <div className='mt-6 flex flex-col gap-3 sm:flex-row'>
-                <a href='https://anuprem2005.github.io/Ayra-Bakers/' className='w-full sm:w-auto'>
+                <a href='https://ayra-bakerzz.vercel.app/' className='w-full sm:w-auto'>
                   <button className='flex w-full items-center justify-center gap-2 rounded-xl bg-cyan-500 px-4 py-3 text-sm font-bold text-white transition-all duration-300 ease-in-out hover:scale-105 hover:bg-cyan-600'>
                     <FaShareFromSquare /> Live Demo
                   </button>
