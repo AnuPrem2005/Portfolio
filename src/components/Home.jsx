@@ -18,7 +18,7 @@ const Home = () => {
           <h3 className='text-xl/20 '>React.js Developer</h3>
           <p className=' text-lg'>Passionate about creating beautiful, responsive web applications with modern technologies. I completed my B.E. in Computer Science Engineering at Stella Mary's College of Engineering in 2026 and specialize in React.js development.</p>
           <div className='gap-10 flex md:flex justify-items-center'>
-            <a href="https://drive.google.com/file/d/1T3HTT4O_KF9jxzrOAk_r2UhvgBkDXM-7/view?usp=drive_link">
+            <a href="https://drive.google.com/file/d/1KEnp3pZxNoO7d9JxIjcCZ10kPuwM9s51/view?usp=drive_link">
           <button className='gap-1 bg-cyan-500 flex place-items-center flex justify-center rounded-md w-40 h-9 mt-7 hover:cursor-pointer text-white hover:bg-cyan-600 hover:-translate-z-1 duration-300 delay-150 hover:scale-110'><IoDownloadOutline />Download Resume</button>
           </a>
           <a href="#contact">
